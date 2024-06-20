@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: prompt, sans-serif;
+}
+
+body {
+  position: relative;
+  .menu,
+  .close,
+  .display {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url("images/keyboard2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .logo {
+  color: #efc2b3;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  svg {
+    width: 128px;
+  }
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a2456;
+  position: absolute;
+  padding: 7px;
+  margin: 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px 32px;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #efc2b3;
+  font-weight: 300;
+}
+
+header .none {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  color: #fff;
+  align-items: center;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Console section */
+.console {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  padding: 10px;
+}
+
+.console img {
+  width: 100%;
+}
+
+.console-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 500px;
+  flex-grow: 1;
+}
+
+.console-container .image-box {
+  background: #d4d4d4;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+.console-container .text {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background-color: #ff8b68;
+  padding: 0 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.console-container .details-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.details-box h3 {
+  text-transform: uppercase;
+}
+
+.details-box .details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.console-container .price {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  font-weight: 300;
+  /* text-align: end; */
+}
+
+.console-container:hover .price::after {
+  content: "SHOP NOW";
+  position: absolute;
+  background-color: #1a2456;
+  border-radius: 20px;
+  color: #fff;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 3px 15px;
+}
+
+/* Create */
+.create {
+  background: #c4c4c4;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color: #1a2456;
+  padding: 30px;
+}
+
+.create img {
+  width: 40%;
+}
+
+/* Final Section */
+.final {
+  gap: 40px;
+}
+
+.final .console-container {
+  width: 300px;
+}
+
+footer {
+  color: #efc2b3;
+  background: #1a2456;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+footer img {
+  width: 35px;
+}
+
+footer .footer-container {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.monogram,
+.quick-links,
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 0.85rem;
+  flex-grow: 1;
+}
+
+.footer-container ul,
+.subscribe > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.monogram p,
+.quick-links p,
+.subscribe > p {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subscribe .email-box,
+.subscribe .none .email-box {
+  display: flex;
+  gap: 20px;
+}
+
+.subscribe input {
+  width: 50%;
+  background: transparent;
+  border: 2px solid #efc2b3;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+button {
+  border-radius: 15px;
+  border: 1px solid #a58b93;
+  line-height: 1.5;
+  padding: 5px 24px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background: #a58b93;
+  color: #1a2456;
+  cursor: pointer;
+}
+
+button:hover {
+  background: transparent;
+  color: #a58b93;
+  border: 2px solid #a58b93;
+}
+
+.footer-icons {
+  margin-top: 13px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons img {
+  background: #efc2b3;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+footer .copyright {
+  display: flex;
+  gap: 4px;
+}
+
+footer .copyright img {
+  width: 16px;
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    .menu,
+    .close {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .display {
+      display: flex;
+      margin-bottom: 5px;
+      justify-content: space-between;
+      gap: 18px;
+    }
+  }
+  .navigation {
+    display: none;
+    //display: block;
+    position: absolute;
+    background: #1a2456;
+    width: 50%;
+    top: 0;
+    left: -19px;
+    height: 100vh;
+
+    ul {
+      margin-top: 90px;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    li {
+      border-bottom: 1px solid #000;
+      width: 100%;
+    }
+
+    a {
+      color: #efc2b3;
+      padding: 16px 32px;
+      display: block;
+
+      font-size: 1.4rem;
+      //background: green;
+
+      &:hover {
+        color: #ff8b68;
+      }
+    }
+
+    .close {
+      float: right;
+      margin: 32px;
+    }
+  }
+}
+
+li {
+  a {
+    color: #efc2b3;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    img {
+      width: 25px;
+      margin-top: 15px;
+    }
+    &:hover {
+      color: #ff8b68;
+    }
+  }
+}
+.dollar {
+  display: flex;
+  a {
+    img {
+      width: 10px;
+    }
+  }
+}
+
+
