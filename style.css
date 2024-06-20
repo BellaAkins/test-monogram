@@ -74,6 +74,12 @@ header .none {
   display: flex;
   align-items: center;
   gap: 10px;
+  // margin-top: 25px;
+}
+
+.header img {
+  width: 30px;
+  background: red;
 }
 
 header .hero {
