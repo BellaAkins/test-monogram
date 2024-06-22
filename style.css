@@ -11,9 +11,9 @@
 body {
   position: relative;
 }
-body .menu,
-body .close,
-body .display {
+ .menu,
+ .close,
+ .display {
   display: none;
 }
 
