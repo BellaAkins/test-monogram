@@ -332,6 +332,7 @@ footer .copyright img {
     top: 0;
     left: -19px;
     height: 100vh;
+    z-index: 100
   }
   .navigation ul {
     margin-top: 90px;
