@@ -312,13 +312,13 @@ footer .copyright img {
 }
 
 @media only screen and (max-width: 680px) {
-  body .menu,
-  body .close {
+   .menu,
+   .close {
     display: block;
     width: 30px;
     cursor: pointer;
   }
-  body .display {
+   .display {
     display: flex;
     margin-bottom: 5px;
     justify-content: space-between;
