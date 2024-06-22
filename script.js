@@ -3,7 +3,7 @@ const close = document.querySelector(".close");
 const nav = document.querySelector(".navigation");
 
 menu.addEventListener("click", () => {
-  nav.style.width = "60%";
+  nav.style.width = "70%";
   nav.style.display = "block";
 });
 
