@@ -328,10 +328,10 @@ footer .copyright img {
     display: none;
     position: absolute;
     background: #1a2456;
-    width: 50%;
+    width: 60%;
     top: 0;
     left: -19px;
-    height: 80vh;
+    height:100vh;
     z-index: 100
   }
   .navigation ul {
@@ -353,7 +353,6 @@ footer .copyright img {
     color: #ff8b68;
   }
   .navigation .close {
-    
     margin: 32px;
   }
 }
